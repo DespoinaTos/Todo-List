@@ -175,6 +175,7 @@ ul li {
     padding: 16px 0;
     width: 90%;
     border-radius: 4px;
+    padding-left: 20px;
 }
 
 img {
@@ -188,7 +189,7 @@ img {
 *   Input & Button
 -----------------------------------------------*/
 
-form input {
+input {
     background: #ffffff;
     height: 48px;
     border: 1px solid #00e1a1;
@@ -212,10 +213,19 @@ form input {
     font-size: 90px;
     color: #00e1a1;
     margin-top: 7px;
-    display: inline-block;
+    display: block;
+    text-align: center;
 }
 
-form {
+.fa-plus-circle:hover {
+    font-size: 90px;
+    color: #000000;
+    margin-top: 7px;
+    display: block;
+    text-align: center;
+}
+
+.buttons {
     text-align: center;
 }
 
@@ -225,11 +235,10 @@ form {
 -----------------------------------------------*/
 
 footer {
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    margin-bottom: 30px;
     text-align: center;
     width: 100%;
-    margin-bottom: 10px;
 }
 
 footer p {
@@ -247,16 +256,6 @@ span {
     display: inline-block;
     margin-right: 4px;
     font-size: 14px;
-}
-
-.intro {
-    margin-bottom: 0.85em;
-    border-radius: 0.25rem;
-    padding: 1.25rem;
-    font-size: 1.2em;
-    font-weight: 200;
-    text-align: left;
-    background: rgba(255, 255, 255, 0.75);
 }
 
 
