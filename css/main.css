@@ -248,3 +248,60 @@ span {
     margin-right: 4px;
     font-size: 14px;
 }
+
+.intro {
+    margin-bottom: 0.85em;
+    border-radius: 0.25rem;
+    padding: 1.25rem;
+    font-size: 1.2em;
+    font-weight: 200;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.75);
+}
+
+
+/*-----------------------------------------------
+*   Today
+-----------------------------------------------*/
+
+.today-piece {
+    border-radius: 0.25rem;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+
+/* Piece positions
+   -------------------------------------------------- */
+
+.top {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.middle {
+    border-radius: 0;
+}
+
+.bottom {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+
+/* Piece categories
+   -------------------------------------------------- */
+
+.month {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5em;
+    font-weight: 200;
+    text-align: center;
+}
+
+.date {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.5em;
+    font-weight: 500;
+    text-align: center;
+}
