@@ -18,5 +18,4 @@ addItem.addEventListener('click', () => {
     ul.appendChild(li);
     newItem.value = '';
     img.style.display = 'none';
-
 });
