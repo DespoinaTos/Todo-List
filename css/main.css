@@ -227,6 +227,7 @@ input {
     margin-top: 7px;
     display: inline-block;
     text-align: center;
+    cursor: pointer;
 }
 
 .buttons {
