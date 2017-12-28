@@ -176,9 +176,9 @@ ul li {
     width: 90%;
     border-radius: 4px;
     padding-left: 20px;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-    -moz-box-shadow: 0 10px 6px -6px #777;
-    box-shadow: 0 10px 6px -6px #777;
+    -webkit-box-shadow: 0 10px 6px -6px rgb(157, 157, 157);
+    -moz-box-shadow: 0 10px 6px -6px rgb(160, 160, 160);
+    box-shadow: 0 10px 6px -6px rgb(147, 147, 147);
 }
 
 img {
