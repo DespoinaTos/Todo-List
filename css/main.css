@@ -182,14 +182,35 @@ ul li {
 }
 
 ul li .fontbuttons {
-    width: 90px;
+    width: 70px;
     height: 50px;
     position: absolute;
     top: 0;
     right: 0;
     font-size: 22px;
-    display: inline-flex;
     padding-top: 13px;
+    margin-right: 20px;
+}
+
+ul li .fontbuttons .remove {
+    width: 35px;
+    height: 50px;
+    float: left;
+    color: #b3b3b3;
+    cursor: pointer;
+    transition: color 0.17s ease-in;
+}
+
+ul li .fontbuttons .remove:hover {
+    color: rgb(255, 67, 67);
+}
+
+ul li .fontbuttons .done {
+    width: 35px;
+    height: 50px;
+    float: left;
+    position: relative;
+    cursor: pointer;
 }
 
 img {
