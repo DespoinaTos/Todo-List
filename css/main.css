@@ -259,6 +259,11 @@ ul li .fontbuttons .done {
     float: left;
     position: relative;
     cursor: pointer;
+    transition: color 0.17s ease-in;
+}
+
+ul li .fontbuttons .done:hover {
+    color: #00DC96;
 }
 
 img {
