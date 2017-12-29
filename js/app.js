@@ -2,7 +2,7 @@
 const newItem = document.querySelector('.nItem');
 const addItem = document.querySelector('.aItem');
 const container = document.querySelector('.container');
-// const lis = document.
+
 
 // eventListener that add todos on the list and buttons
 addItem.addEventListener('click', () => {
@@ -32,11 +32,17 @@ addItem.addEventListener('click', () => {
 
 //event listener for removing todos and complete todos
 container.addEventListener('click', (event) => {
+    const lis = document.getElementsByTagName('li');
     if (event.target.tagName == 'I') {
         if (event.target.className == 'fa fa-trash-o remove') {
             let li = event.target.parentNode.parentNode;
             let ul = li.parentNode;
             ul.removeChild(li);
+
+            if (lis.length == 0) {
+                let img = document.querySelector('.notodos')
+                img.style.display = 'block';
+            }
         }
         if (event.target.className == 'fa fa-check-square done') {
             event.target.style.color = '#00DC96';
