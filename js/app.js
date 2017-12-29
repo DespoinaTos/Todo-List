@@ -2,6 +2,7 @@
 const newItem = document.querySelector('.nItem');
 const addItem = document.querySelector('.aItem');
 const container = document.querySelector('.container');
+// const lis = document.
 
 // eventListener that add todos on the list and buttons
 addItem.addEventListener('click', () => {
@@ -38,9 +39,8 @@ container.addEventListener('click', (event) => {
             ul.removeChild(li);
         }
         if (event.target.className == 'fa fa-check-square done') {
-            let li = event.target.parentNode.parentNode;
-            let ul = li.parentNode;
-            ul.removeChild(li);
+            event.target.style.color = '#00DC96';
+            event.target.parentNode.parentNode.style.opacity = '0.4';
         }
     }
 });
