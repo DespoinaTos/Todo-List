@@ -1,6 +1,8 @@
 // Select DOM elements
 const newItem = document.querySelector('.nItem');
 const addItem = document.querySelector('.aItem');
+const container = document.querySelector('.container');
+
 // eventListener that add todos on the list and buttons
 addItem.addEventListener('click', () => {
     // Insert todos
@@ -20,10 +22,25 @@ addItem.addEventListener('click', () => {
     let completed = document.createElement('i');
     completed.className = 'fa fa-check-square done';
     buttonDiv.appendChild(completed);
-
     // Emptying the input value
     newItem.value = '';
     //Dissapearing the image after 1st todo
     let img = document.querySelector('.notodos')
     img.style.display = 'none';
+});
+
+//event listener for removing todos and complete todos
+container.addEventListener('click', (event) => {
+    if (event.target.tagName == 'I') {
+        if (event.target.className == 'fa fa-trash-o remove') {
+            let li = event.target.parentNode.parentNode;
+            let ul = li.parentNode;
+            ul.removeChild(li);
+        }
+        if (event.target.className == 'fa fa-check-square done') {
+            let li = event.target.parentNode.parentNode;
+            let ul = li.parentNode;
+            ul.removeChild(li);
+        }
+    }
 });
