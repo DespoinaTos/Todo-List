@@ -33,11 +33,11 @@ addItem.addEventListener('click', () => {
 
     }
 });
-
 //event listener for removing todos and complete todos
 container.addEventListener('click', (event) => {
     const lis = document.getElementsByTagName('li');
     if (event.target.tagName == 'I') {
+        // Remove a todo
         if (event.target.className == 'fa fa-trash-o remove') {
             let li = event.target.parentNode.parentNode;
             let ul = li.parentNode;
@@ -47,6 +47,7 @@ container.addEventListener('click', (event) => {
                 img.style.display = 'block';
             }
         }
+        // Pressing the complete button
         if (event.target.className == 'fa fa-check-square done') {
             event.target.style.color = '#00DC96';
             event.target.parentNode.parentNode.style.opacity = '0.4';
