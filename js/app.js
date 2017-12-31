@@ -55,4 +55,8 @@ function addItems() {
         }
     });
 }
-addItems();
+
+window.onload = function() {
+    console.log("The window has loaded!");
+    addItems();
+};
